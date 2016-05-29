@@ -1,6 +1,3 @@
-/* 
-  argo css 
-*/
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -39,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .hide-medium {
     display: none; } }
-@media (min-width: 820px) {
+@media (min-width: 1000px) {
   .hide-small {
     display: initial; }
 
@@ -172,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid white;
     padding: 4px;
     margin-top: 12px; } }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 1000px) {
   .dilogo {
     margin-bottom: 10px;
     padding-left: 20px; }
@@ -246,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   right: 10px;
   top: 0px;
-  width: 820px;
+  width: 1000px;
   background-color: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
   border: solid thin #5E5E65;
@@ -399,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .page {
     padding: 15px 10px; } }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 1000px) {
   .contentwrapper {
     padding: 15px 8% 30px; }
 
