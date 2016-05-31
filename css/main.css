@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5, h6 {
 .hide-small {
   display: none; }
 
-@media (min-width: 600px) {
+@media (min-width: 740px) {
   .hide-small {
     display: initial; }
 
   .hide-medium {
     display: none; } }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .hide-small {
     display: initial; }
 
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1em; }
 
 .titlebar {
-  height: 55px;
+  height: 60px;
   background: url("../images/body-home.png") repeat scroll 0 0;
   position: relative;
   margin: 0;
@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   position: absolute;
+  top: 5px;
   line-height: 1;
   color: white; }
   .title h1 {
@@ -88,13 +89,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbox {
   text-align: center; }
   .navbox svg {
-    width: 29px;
-    height: 29px;
+    width: 40px;
+    height: 40px;
     border: 1px solid white;
     border-radius: 5px;
     padding: 3px;
     float: right;
-    margin-top: 13px; }
+    margin-top: 10px; }
     .navbox svg path {
       fill: white; }
 
@@ -113,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block; }
   .smallnav a {
     text-decoration: none;
-    padding: 3px 5px;
+    padding: 5px 5px;
     border-radius: 5px;
     color: white;
     background-color: #789AA1;
@@ -122,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 .search-sm form input {
   font-family: 'Allan', Helvetica, Rockwell,cursive;
   font-size: 18px;
+  padding: 3px 6px;
   border-radius: 5px;
   display: inline; }
 .search-sm form .searchbutton {
@@ -135,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     text-transform: uppercase; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 740px) {
   .dilogo {
     float: none;
     height: 30px;
@@ -147,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 32px; }
 
   .titlebar {
-    height: 70px;
+    height: 76px;
     padding: 0 3%; }
 
   .title h1 {
@@ -164,12 +166,20 @@ h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase; }
 
   .navbox svg {
-    width: 46px;
-    height: 46px;
+    width: 56px;
+    height: 56px;
     border: 2px solid white;
     padding: 4px;
-    margin-top: 12px; } }
-@media screen and (min-width: 1000px) {
+    margin-top: 10px; }
+
+  .smallnav {
+    font-size: 22px; }
+    .smallnav a {
+      margin-left: 10px; }
+
+  .search-sm form input {
+    font-size: 22px; } }
+@media screen and (min-width: 1024px) {
   .dilogo {
     margin-bottom: 10px;
     padding-left: 20px; }
@@ -183,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .topnav {
     position: absolute;
-    bottom: 68px;
+    bottom: 74px;
     right: 7%; }
     .topnav a {
       background-color: #fff;
@@ -202,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .search form {
     float: right;
-    margin-top: 16px; }
+    margin-top: 20px; }
     .search form input {
       font-size: 20px;
       line-height: 1.5em;
@@ -218,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 7%; } }
 .yearsmenu {
   position: absolute;
-  top: 71px;
+  top: 77px;
   right: 7%; }
 
 #openyears a {
@@ -243,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   right: 10px;
   top: 0px;
-  width: 1000px;
+  width: 820px;
   background-color: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
   border: solid thin #5E5E65;
@@ -256,98 +266,118 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 75px;
     display: inline-block;
     vertical-align: middle; }
-  .years a {
-    color: black;
-    text-decoration: none;
-    padding: 5px 16px; }
-  .years a:hover {
-    background-color: #789AA1;
-    border-radius: 5px; }
-  .years .yearbutton {
-    color: white;
-    background-color: #789AA1;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 5px; }
+    .years li a {
+      color: black;
+      padding: 5px 16px; }
+    .years li a:hover {
+      background-color: #789AA1;
+      border-radius: 5px; }
+
+.yearstitle {
+  background-color: #789AA1;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 8px 8px;
+  margin-bottom: 10px; }
+  .yearstitle h3 {
+    font-size: 22px;
+    color: white; }
 
 #closeyears {
   font-size: 18px;
+  color: white;
+  padding: 4px 16px;
   float: right;
   cursor: pointer;
-  background-color: #5E5E65; }
+  background-color: #5E5E65;
+  border-radius: 5px; }
 
-#opencollections {
-  cursor: pointer;
-  z-index: 999;
+.yearsbutton {
+  background-color: #789AA1;
+  color: white;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
+
+.allcollections {
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: 0px; }
+
+#opencollections a {
+  cursor: pointer;
   color: white;
   font-size: 14px;
-  background: #999;
+  background: #5E5E65;
   border-radius: 0px 0px 0px 20px;
-  padding: 5px 20px;
-  border-bottom: 1px #dadada solid; }
+  padding: 6px 15px 6px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3); }
 
-#collectionlist {
-  width: 380px;
-  background: #666;
-  color: white;
+.collections {
+  display: none;
   position: absolute;
-  top: -3000px;
-  padding: 20px;
-  right: 20px;
-  z-index: 1000;
-  border-radius: 20px 0px 0px 20px;
-  height: 700px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  transition: .4s;
-  -webkit-transition: .4s;
-  line-height: 1.25; }
-  #collectionlist a {
-    color: #fff;
-    font-size: 15px;
-    text-decoration: none; }
-    #collectionlist a strong {
-      font-size: larger; }
-  #collectionlist ul {
-    list-style: none;
-    padding-left: 20px; }
-    #collectionlist ul li {
-      padding: 3px; }
-  #collectionlist h4 {
-    font-size: 24px;
-    margin-bottom: 8px; }
+  top: 15px;
+  right: 10px;
+  z-index: 999;
+  width: 690px;
+  background: #d3d3d6;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px; }
 
-.searchallcollections {
-  margin: 0px -14px 0px 0px;
-  float: right; }
-  .searchallcollections input {
-    font-size: 12px;
-    line-height: 1.5em;
-    border-radius: 5px;
-    display: inline;
-    font-family: "Allan", helvetica, Helvetica, Rockwell, cursive; }
-  .searchallcollections .button-all {
-    color: #fff;
-    background-color: #789AA1;
-    margin-left: 10px; }
+.collectionstitle {
+  background-color: #789AA1;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 8px 8px;
+  margin-bottom: 10px; }
+  .collectionstitle h2 {
+    font-size: 24px;
+    color: white; }
 
 #closecollections {
   cursor: pointer;
   float: right;
-  text-align: center;
-  font-size: 16px;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  margin: -14px -5px 0px 0px;
-  padding: 2px 3px;
-  font-family: verdana, arial; }
+  color: white;
+  font-size: 18px;
+  padding: 5px 16px;
+  background-color: #5E5E65;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
 
-#closecollections:hover {
-  color: #666;
-  background: #fff; }
+.searchallcollections {
+  float: right;
+  margin: 2px 20px; }
+  .searchallcollections input {
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline;
+    font-family: "Allan", helvetica, Helvetica, Rockwell, cursive; }
+  .searchallcollections .button-all {
+    color: white;
+    background-color: #789AA1;
+    margin-left: 10px; }
 
+.collectionslist ul {
+  list-style: none; }
+.collectionslist li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  background-color: white;
+  border: 2px solid #5E5E65;
+  border-radius: 5px; }
+.collectionslist a {
+  color: black;
+  text-decoration: none;
+  line-height: 1.6;
+  padding: 0px 26px; }
+  .collectionslist a strong {
+    font-size: larger; }
+
+@media screen and (min-width: 1024px) {
+  .collections {
+    width: 974px; } }
 .contentwrapper {
   margin: 0 auto;
   padding: 5px 3% 20px; }
@@ -357,21 +387,23 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6); }
+  .page p {
+    font-family: Georgia, "Allan", Helvetica, Rockwell, cursive; }
 
 .pageheader {
-  padding: 10px 15px; }
+  padding: 10px 15px 5px; }
 
 .columnwrapper {
   width: 98%;
   margin: 5px auto;
   padding: 0;
-  text-align: center;
   display: block; }
 
 .subpagetitle {
   font-size: 30px;
-  line-height: 1; }
+  line-height: 0.8; }
   .subpagetitle a {
+    font-size: 40px;
     text-decoration: none;
     color: #789AA1;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3); }
@@ -387,16 +419,18 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: white; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 740px) {
   .pageheader {
     padding: 20px 15px 5px 25px; }
 
   .subpagetitle {
     font-size: 55px; }
+    .subpagetitle a {
+      font-size: 65px; }
 
   .page {
     padding: 15px 10px; } }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .contentwrapper {
     padding: 15px 8% 30px; }
 
@@ -421,6 +455,23 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       font-size: 22px;
       color: white; }
+
+.issuelist li {
+  list-style: none;
+  width: 100%;
+  border: 4px solid #5E5E65;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px; }
+.issuelist div {
+  display: inline; }
+
+.issue {
+  width: 25%;
+  font-size: 20px; }
+
+.subject {
+  width: 70%; }
 
 footer {
   background: url("../images/body-home.png") repeat scroll 0 0;
