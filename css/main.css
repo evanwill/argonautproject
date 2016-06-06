@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   font-size: 18px;
   text-align: right;
-  background-color: lightgrey;
+  background-color: #d3d3d6;
   padding: 10px 3%;
   margin-top: 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3); }
@@ -254,9 +254,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 10px;
   top: 0px;
   width: 820px;
-  background-color: #fff;
+  background-color: #d3d3d6;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
-  border: solid thin #5E5E65;
   border-radius: 5px;
   font-size: 22px;
   padding: 10px; }
@@ -272,6 +271,11 @@ h1, h2, h3, h4, h5, h6 {
     .years li a:hover {
       background-color: #789AA1;
       border-radius: 5px; }
+  .years .yearsbutton {
+    background-color: #789AA1;
+    color: white;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px; }
 
 .yearstitle {
   background-color: #789AA1;
@@ -290,12 +294,6 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   cursor: pointer;
   background-color: #5E5E65;
-  border-radius: 5px; }
-
-.yearsbutton {
-  background-color: #789AA1;
-  color: white;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
   border-radius: 5px; }
 
 .allcollections {
