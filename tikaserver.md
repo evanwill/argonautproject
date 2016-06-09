@@ -26,7 +26,10 @@ sudo passwd tika-user
 Its easiest to use the pre-built tika `.jar` files. 
 Switch to tika-user (`sudo su - tika-user`), and create a directory `mkdir tika` and `cd tika`.
 Download Tika from a mirror (find one on this [page](https://tika.apache.org/download.html)) with `wget`.
-For example `wget http://apache.parentingamerica.com/tika/tika-server-1.13.jar`.
+For example: 
+```
+wget http://apache.parentingamerica.com/tika/tika-server-1.13.jar
+```
 
 ## Get NER
 
